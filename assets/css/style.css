@@ -178,9 +178,28 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.project1, .project2 h3 {
-  color: var(--secondary-color);
+
+.project1 h3 {
+  color: white;
   font-size: 40px;
+  flex: 1 30%;
+}
+
+.project1 h4 {
+  color: var(--secondary-color);
+  font-size: 25px;
+  flex: 1 30%;
+}
+
+.project2 h3 {
+  color: white;
+  font-size: 32px;
+  flex: 1 30%;
+}
+
+.project2 h4 {
+  color: var(--secondary-color);
+  font-size: 22px;
   flex: 1 30%;
 }
 
@@ -279,11 +298,8 @@ section {
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
+    .hero-cta {
     width: 100%;
-  }
-  
-  .hero-cta {
     text-align: center;
   }
 
@@ -303,40 +319,32 @@ section {
     padding: 30px 15px;
   }
 
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
+  .project-info {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
   }
 
-  .step-img {
+  .project-img {
     flex: 0 32%;
     margin-right: 0;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-  .step-text {
+  .project1 h4  {
     flex: 100%;  
   }
 
-  .trainer-bio h3, .trainer-bio h4 {
+  .project2 h4  {
+    flex: 100%;  
     display: block;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
+    .section-title {
     width: 95%;
   }
 
@@ -344,7 +352,7 @@ section {
     width: 100%;
   }
 
-  .trainer {
+  .projects {
     flex: 0 100%;
   }
 
@@ -354,9 +362,5 @@ section {
 
   .contact-info > * {
     flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
   }
 }
