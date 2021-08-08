@@ -159,19 +159,28 @@ section {
   background: var(--primary-color);
 }
 
-.project {
+.project1 {
   margin: 50px auto;
   padding-bottom: 50px;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.project h3 {
-  color: white;
-  font-size: 35px;
+.project2 {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.project1, .project2 h3 {
+  color: var(--secondary-color);
+  font-size: 40px;
   flex: 1 30%;
 }
 
