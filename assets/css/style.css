@@ -215,23 +215,13 @@ section {
 
 .contact-info > * {
   flex: 1;
-  margin: 15px;
+  margin: 15px 30px;
 }
 
 .contact-info div {
-  color: white;
-}
-
-.contact-info h3 {
   color: var(--primary-color);
-  font-size: 32px;
-}
-
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
+  margin-left: 90px;
+  font-size: 24px;
 }
 
 .contact-info a {
