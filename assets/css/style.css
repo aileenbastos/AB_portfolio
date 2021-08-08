@@ -1,7 +1,7 @@
 :root {
   --primary-color: #23b19e;
-  --secondary-color: #042920;
-  --tertiary-color: #374142;
+  --secondary-color: #7d8583;
+  --tertiary-color: #232829;
 }
 
 * {
@@ -105,7 +105,7 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url('../images/hero-bg.png');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -131,118 +131,6 @@ section {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero-form {
-  border: 3px solid var(--secondary-color);
-  background-color: rgba(35, 177, 158, 0.8);
-  padding: 20px;
-  color: var(--secondary-color);
-  width: 40%;
-  margin: 3.5%;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero-form button:hover {
-  background-color: var(--tertiary-color);  
-}
-
-.hero-form h3 {
-  font-size: 24px;
-  margin: 0;
-}
-.hero-form p {
-  margin: 5px 0 15px 0;
-}
-
-.form-input {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px; 
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.form-input:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.hero-form label {
-  margin: 0 5px;
-}
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-} 
-
-.checkbox-wrapper input, .radio-wrapper input {
-  opacity: 0;
-}
-
-.checkbox-wrapper label, .radio-wrapper label {
-  position: relative;
-  left: 10px;
-  margin: 10px;
-  line-height: 1.6;
-}
-
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background: var(--secondary-color);
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-}
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
 /* HERO STYLES END */
 
 
@@ -279,11 +167,11 @@ section {
 
 
 /* WORK STYLES START */
-.steps { 
+.projects { 
   background: var(--primary-color);
 }
 
-.step {
+.project {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
@@ -293,46 +181,32 @@ section {
   justify-content: space-between;
 }
 
-.step:last-child {
-  border-bottom: none;
-}
-
-.step h3 {
+.project h3 {
   color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
 }
 
-.step-info {
+.project-text {
   flex: 2 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.step-img {
+.project-img {
   flex: 1 12%;
   margin-right: 20px;
 }
 
-.step-img img {
+.project-img img {
   max-width: 100%;
 }
 
-.step-text {
+.project-text {
   flex: 12;
 }
 
-.step-text p {
-  color: var(--tertiary-color);
-  font-size: 18px;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: var(--secondary-color);
-}
 /* WORK STYLES END */
 
 
@@ -356,10 +230,6 @@ section {
   margin: 15px;
 }
 
-.contact-info iframe {
-  height: 400px;
-}
-
 .contact-info div {
   color: white;
 }
@@ -374,40 +244,6 @@ section {
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
-}
-
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
 }
 
 .contact-info a {
@@ -468,13 +304,10 @@ section {
     width: 80%;
   }
   
-  .trainer {
+  .projects {
     flex: 0 70%;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
-  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
